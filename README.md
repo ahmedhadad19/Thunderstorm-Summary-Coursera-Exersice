@@ -1,4 +1,5 @@
 # Thunderstorm-Summary-Coursera-Exersice
+
 load('stormData'); 
 %stormData.Total_Cost(ismissing(stormData.Total_Cost))=0;
 summaryRegionCosts = groupsummary(stormData,"Region",["min","median","mean","max"],"Total_Cost")
